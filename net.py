@@ -153,6 +153,3 @@ class LTENetwork:
         a_hprd_city_big = 3.2 * pow(math.log10(11.75 * hprm), 2) - 4.97                                                     # Поправочный коэффициент для большого города
         self.l_city_big = (46.3 + 33.91 * math.log10(f) - 13.821 * math.log10(hprd) - a_hprd_city_big +
                            (44.9 - 6.55 * math.log10(hprd)) * math.log10(d) + 3)                                            # Среднее затухание в большом городе
-        
-net = LTENetwork(7, "93", 6)
-print("penis")
